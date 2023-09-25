@@ -1,6 +1,7 @@
 require('dotenv').config()
 const express = require('express')
 const workoutsRoutes = require('./Routes/workouts')
+const userRoutes = require('./Routes/user')
 const mongoose = require('mongoose')
 
 //express app
@@ -13,6 +14,7 @@ app.use(express.json())
 //routes will only fire if url gas /api/workouts in the front
 //eg localhost/4000/api/workouts + routes in workouts.js
 app.use('/api/workouts', workoutsRoutes)
+app.use('/api/user', userRoutes)
 
 //connect to DB
 mongoose.connect(process.env.MONGO_URI)
