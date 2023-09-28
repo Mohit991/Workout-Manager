@@ -11,7 +11,7 @@ const Signup = () => {
         await signup(email, password)
     }
     return ( 
-        <form className="singup" onSubmit={handleSubmit}>
+        <form className="signup" onSubmit={handleSubmit}>
             <h3>Sign Up!</h3>
             <label>Email</label>
             <input
