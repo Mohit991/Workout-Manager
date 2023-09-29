@@ -4,7 +4,10 @@ const mongoose = require('mongoose')
 const getWorkouts = async (req, res) => {
     //get all the workouts from DB
     //sort by createdAt in desc order
-    const workouts = await Workout.find({}).sort({createdAt: -1})
+    //user._id was attached in the requireAuth middleware
+    //requireAuth was called before these routes, so, the req object has user id etc.
+    const user_id = req.user._id 
+    const workouts = await Workout.find({user_id}).sort({createdAt: -1})
     res.status(200).json(workouts)
 }
 
@@ -45,7 +48,11 @@ const createWorkout = async (req, res) => {
 
 
     try{
-        const workout = await Workout.create({title, load, reps})
+        //user._id was attached in the requireAuth middleware
+        //requireAuth was called before these routes, so, the req object has user id etc.
+        const user_id = req.user._id
+        console.log(user_id);
+        const workout = await Workout.create({title, load, reps, user_id})
         res.status(200).json(workout)
     }
     catch(error){
