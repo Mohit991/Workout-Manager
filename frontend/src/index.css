@@ -140,3 +140,27 @@ form.signup, form.login {
   background: #fff;
   border-radius: 4px;
 }
+
+
+.workout-details label,
+.workout-details input {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.workout-details label {
+  width: 40px; /* Adjust the width as needed for label alignment */
+  font-weight: bold; /* Make the label text bold, if desired */
+  margin-right: 10px; /* Adjust for spacing between label and input */
+  color:green
+  
+}
+
+.workout-details input {
+  width: 200px; /* Adjust the width as needed for input alignment */
+  padding-top: 19px; /* Adjust as needed for input field padding */
+  border: none; /* Remove borders from the input fields */
+  font-size:17px; /* Make the input text bold */
+  font-weight: bold;
+  color:rgb(30, 129, 30)
+}
