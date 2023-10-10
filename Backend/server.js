@@ -26,10 +26,10 @@ app.use('/api/workouts', workoutsRoutes)
 app.use('/api/user', userRoutes)
 
 //connect to DB
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect("mongodb+srv://mohit94596:es1512p8ad@mernapp.ziat16q.mongodb.net/?retryWrites=true&w=majority")
 .then(() => {
     //listening for requests
-    app.listen(process.env.PORT, () => {
+    app.listen(4000, () => {
         console.log(`Connected to DB & listening on port ${process.env.PORT}`)
     })
 })
