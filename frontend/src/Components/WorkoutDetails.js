@@ -15,7 +15,7 @@ const WorkoutDetails = ({workout}) => {
         if(!user){
             return
         }
-        const response = await fetch('http://localhost:4000/api/workouts/' + workout._id, {
+        const response = await fetch('https://workout-manager-black.vercel.app/api/workouts/' + workout._id, {
             method: 'DELETE',
             headers: {
                 'Authorization': `Bearer ${user.token}`
@@ -39,7 +39,7 @@ const WorkoutDetails = ({workout}) => {
         }
         const updatedWorkout = {title, load, reps}
 
-        const response = await fetch('http://localhost:4000/api/workouts/' + workout._id, {
+        const response = await fetch('https://workout-manager-black.vercel.app/api/workouts/' + workout._id, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',
