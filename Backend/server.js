@@ -3,12 +3,13 @@ const express = require('express')
 const workoutsRoutes = require('./Routes/workouts')
 const userRoutes = require('./Routes/user')
 const mongoose = require('mongoose')
-
+const cors = require('cors')
 //express app
 const app = express()
 
 //middleware
 app.use(express.json())
+app.use(cors())
 
 //using the workout routes written in workouts.js
 //routes will only fire if url gas /api/workouts in the front
