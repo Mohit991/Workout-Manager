@@ -9,13 +9,14 @@ const app = express()
 
 //middleware
 app.use(express.json())
-app.use(cors(
-    {
-        origin: ["https://workout-manager-mp55.vercel.app"],
-        methods: ["POST", "GET"],
-        credentials: true
-    }
-))
+app.use(cors())
+// app.use(cors(
+//     {
+//         origin: ["https://workout-manager-mp55.vercel.app"],
+//         methods: ["POST", "GET"],
+//         credentials: true
+//     }
+// ))
 
 //using the workout routes written in workouts.js
 //routes will only fire if url gas /api/workouts in the front
