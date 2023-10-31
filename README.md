@@ -12,7 +12,7 @@ The frontend of Workout Manager is built using React and the Context API provide
 ### Frontend Repository
 
 - GitHub Repository: [Workout Manager Backend](https://github.com/Mohit991/Workout-Manager/tree/main/Frontend)
-- 
+
 ## Backend
 
 The backend of Workout Manager serves as the API responsible for storing and retrieving workout routine data. It is built using Node.js, Express.js, and MongoDB. The backend offers RESTful endpoints for managing workout routines, which are consumed by the frontend.
@@ -35,22 +35,18 @@ To run the backend of the project on your local machine, follow these steps:
 
 1. Clone the backend repository to your local machine:
 
-   ```bash
-   git clone https://github.com/Mohit991/Workout-Manager.git
+  git clone https://github.com/Mohit991/Workout-Manager.git
 Navigate to the backend directory:
 
-bash
-Copy code
+
 cd Backend
 Install the project dependencies:
 
-bash
-Copy code
+
 npm install
 Start the backend server:
 
-bash
-Copy code
+
 npm start
 The backend server will start running on a specified port.
 
