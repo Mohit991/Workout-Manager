@@ -36,18 +36,22 @@ To run the backend of the project on your local machine, follow these steps:
 1. Clone the backend repository to your local machine:
 
   git clone https://github.com/Mohit991/Workout-Manager.git
+  
 Navigate to the backend directory:
 
 
 cd Backend
+
 Install the project dependencies:
 
 
 npm install
+
 Start the backend server:
 
 
 npm start
+
 The backend server will start running on a specified port.
 
 User Accounts
