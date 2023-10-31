@@ -67,11 +67,17 @@ The project does not use Redux for state management; instead, it utilizes the Co
 Usage
 The frontend communicates with the backend API to manage workout routines.
 The frontend uses the following API endpoints to interact with the backend:
+
 GET /workouts: Fetch all workout routines.
+
 POST /workouts: Create a new workout routine.
+
 GET /workouts/:id: Fetch a specific workout routine.
+
 PUT /workouts/:id: Update a workout routine.
+
 DELETE /workouts/:id: Delete a workout routine.
+
 Project Structure
 The project structure includes both the frontend and backend components. The frontend files are located in the project root, while the backend files are in the Backend directory.
 
