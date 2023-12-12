@@ -1,6 +1,6 @@
 # Workout Manager
 
-Workout Manager is a full-stack web application for tracking and managing your workout routines. You can easily create, view, edit, and delete workout routines to help you stay on track with your fitness goals. This README provides information about both the frontend and backend components of the project.
+Workout Manager is a full-stack web application for tracking and managing your workout routines. You can easily create, view, edit, and delete workout routines to help you stay on track with your fitness goals. This README provides information about both the frontend and backend components of the project. 
 The app can be accessed and used at: [https://workout-manager-bwj3.vercel.app/](https://workout-manager-bwj3.vercel.app/).
 
 ![image](https://github.com/Mohit991/Workout-Manager/assets/36065945/0b8b3f2f-bbd9-4d62-b153-a9109e433022)
